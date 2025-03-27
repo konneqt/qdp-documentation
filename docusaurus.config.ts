@@ -6,7 +6,7 @@ const config = {
   title: 'Quantum API Dev Portal',
   tagline: 'A Powerful Chaos Engineering Platform for Kubernetes',
   favicon: '/img/favicon.ico',
-  url: 'https://konneqt.io',
+  url: 'https://konneqt.github.io',
 
   baseUrl: '/qdp-documentation/',
 

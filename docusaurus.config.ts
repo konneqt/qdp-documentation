@@ -6,17 +6,15 @@ const config = {
   title: 'Quantum API Dev Portal',
   tagline: 'A Powerful Chaos Engineering Platform for Kubernetes',
   favicon: '/img/favicon.ico',
-
-  // Set the production url of your site here
   url: 'https://konneqt.io',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
+
   baseUrl: '/qdp-documentation/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'konneqt', // Usually your GitHub org/user name.
-  projectName: 'qdp-documentation', // Usually your repo name.
+  organizationName: 'konneqt', 
+  projectName: 'qdp-documentation', 
+  deploymentBranch: 'main',
 
   onBrokenLinks: 'warn',
   trailingSlash: true,

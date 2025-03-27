@@ -1,0 +1,114 @@
+---
+sidebar_position: 1
+title: "Installation"
+description: "Installation Guide"
+---
+
+import Link from '@docusaurus/Link';
+
+# Installation
+
+## 📌 About the Project
+
+The **Quantum API Dev Portal (QDP)** is a powerful tool designed for API documentation. It streamlines the process of generating API documentation automatically and allows users to choose from various templates to customize their documentation.
+
+### Key Features
+- Automate the generation of API documentation
+- Select different templates to match your needs
+- Integrate seamlessly with OpenAPI specifications
+- Easily deploy and share API documentation
+
+## 🛠 Installation Methods
+
+:::info
+### Prerequisites
+- Node.js (version 18 or higher)
+- npm (version 10 or higher)
+- Git (version 2 or higher)
+:::
+
+
+### Method 1: Quick Install via npm
+
+The simplest way to get started with QDP is using npm:
+
+```sh
+npm install qdp
+```
+
+**First steps**
+1. Starting the CLI:
+    
+```sh
+npm run qdp-init
+```
+This command opens QDP's interactive CLI interface, where you can configure your documentation project. For more details, go to: <Link to="/docs/cli/" >CLI</Link>
+
+2. **Building the project** 
+
+After configuring your preferences, build your project:
+
+```sh
+npm run qdp-build
+```
+3. **Publish the site**
+
+When you are ready to publish your documentation:
+
+```sh
+npm run qdp-publish
+```
+
+
+### Method 2: Clone from GitHub Repository
+
+For developers who want more control or wish to contribute:
+
+1. Clone the repository:
+```sh
+git clone https://github.com/konneqt/quantum-dev-portal.git
+```
+
+2. Navigate to the project directory:
+```sh
+cd qdp
+```
+
+3. Install dependencies:
+```sh
+npm install
+```
+
+4. Start the project:
+```sh
+npm start
+```
+
+5. Build the project:
+```sh
+npm run build
+```
+
+6. Deploy the project:
+```sh
+npm run deploy
+```
+
+#### Additional GitHub Installation Notes
+- Ensure you have Git installed
+- Recommended for contributors and advanced users
+- Provides access to the latest development version
+- Allows local customization and potential contributions
+
+## 💡 Recommended Installation Method
+
+- **For Quick Start**: Use npm installation
+- **For Development/Customization**: Clone the GitHub repository
+
+## 🔧 Post-Installation Setup
+
+After installation, you can:
+- Initialize a new project
+- Configure templates
+- Generate your first API documentation
+

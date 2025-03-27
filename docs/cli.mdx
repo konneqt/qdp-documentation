@@ -1,0 +1,74 @@
+---
+title: "CLI"
+description: "CLI"
+---
+import Link from '@docusaurus/Link';
+
+
+# CLI
+
+Our CLI offers various options for customising and generating documentation according to your needs. To start the CLI you must use the command:
+
+```bash
+ npm run qdp-init
+```
+
+After starting the command, you will see the following options available in the CLI:
+
+![](/cli.png)
+
+
+## Main features
+
+
+### 1. Upload OpenAPI files
+
+You can upload OpenAPI specification files directly to generate your documentation. This method is quick and straightforward, which makes it perfect for developers who already have their OpenAPI files prepared.
+
+![](/uploadFiles.png)
+
+### 2. Generate documentation from OpenAPI files available
+
+
+ The CLI can automatically generate documentation from OpenAPI files entered by the user via Upload OpenAPI files. This functionality is useful when you have API specification files that need to be documented quickly and without complications.
+
+![](/generateFiles.png)
+
+### 3. Generate documentation from a URI entered by the user
+
+ You can enter a URI, and the CLI will fetch the OpenAPI specification from that endpoint, creating the documentation automatically based on the retrieved data.
+
+![](/generateURI.png)
+
+### 4. Generate documentation from the OpenAPI files available in Quantum API Platform - QAP
+
+ If you are using the Quantum API Platform (QAP), you can integrate the CLI with it to generate documentation from the OpenAPI files available within QAP. To use this feature, you need to configure your access to the system.
+
+:::info  
+
+- **Access configuration:**
+    To access the system, enter the following data: 
+    * Client ID and Client Secret,  
+    * Username and Password,  
+    * Company Name,  
+    * URI of the QAP APIs,  
+    * OAuth URL (to generate the access token).
+:::
+
+ Also, if you have already set up your access and some of your information has changed, you can choose to clear your access settings and set up a new one. If all is well, you can choose the option of accessing QAP from an already configured access.
+
+![](/generateQAP.png)
+
+### 5. Choose one of the available templates to use in the Quantum API Dev Portal
+
+The CLI allows you to select from a variety of templates for the Quantum API Dev Portal. The available templates are:
+
+* Dyte
+* Chaos Mesh
+* Homarr
+
+![](/generateTemplate.png)
+
+These templates have been customized to offer modern and intuitive layouts, improving the experience when using the Dev Portal.
+To find out more about the Templates, go to: <Link to="/docs/templates/" >Templates</Link>
+

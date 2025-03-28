@@ -18,7 +18,7 @@ import { useColorMode } from '@docusaurus/theme-common'
 gsap.registerPlugin(ScrollTrigger)
 
 const description =
-  "Our API Dev Portal has been designed to provide an intuitive and organised experience when consulting your API documentation. With Docusaurus, we offer a modern and user-friendly interface, making it easy for developers to access essential information. Explore our documentation and find out how to make the most of Quantum API Dev Portal's features - from installation to generating documentation and using the available templates."
+  "Our API Dev Portal is designed to deliver an intuitive, well-organized experience for consulting API documentation. Built with Docusaurus, it features a modern, user-friendly interface that helps developers quickly access critical information. Explore our documentation to discover how to maximize the Quantum API Dev Portal’s capabilities—from installation and documentation generation to leveraging pre-built templates."
 
 function Home() {
   const { i18n } = useDocusaurusContext()

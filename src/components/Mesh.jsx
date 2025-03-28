@@ -94,7 +94,6 @@ export default function SquareMesh() {
           height: '100%',
           zIndex: -1
         }}
-        viewBox={`0 0 1225 1500`}
         xmlns="http://www.w3.org/2000/svg"
       >
         <g ref={pathsGroup} />

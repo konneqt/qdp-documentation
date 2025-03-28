@@ -1,5 +1,7 @@
 
 import { themes as prismThemes } from 'prism-react-renderer'
+import type * as OpenApiPlugin from "docusaurus-plugin-openapi-docs";
+import { APIOptions } from 'docusaurus-plugin-openapi-docs/src/types';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -104,8 +106,29 @@ const config = {
   themes:['docusaurus-theme-openapi-docs'],
 
   plugins: [
-    
+    [
+      "docusaurus-plugin-openapi-docs",
+      {
+        id: "Swagger-Petstore-OpenAPI-3-0",
+        docsPluginId: "classic",
+        config: {
+          "Swagger-Petstore-OpenAPI-3-0": {
+            specPath: "apis/Swagger-Petstore-OpenAPI-3-0.yaml",
+            outputDir: "docs/Swagger-Petstore-OpenAPI-3-0",
+            sidebarOptions: {
+              groupPathsBy: "tag",
+              categoryLinkSource: "tag",
+            },
+            template: "api.mustache",
+            downloadUrl: "/apis/Swagger-Petstore-OpenAPI-3-0.yaml",
+            hideSendButton: false,
+            showSchemas: true,
+          },
+        },
+      },
+    ],
   ],
+  
 }
 
 export default config

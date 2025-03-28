@@ -43,13 +43,26 @@
   mask-image: linear-gradient(to top, transparent 1%, #fff 60%, #000 100%);
 }
 
-/* Estilização geral */
+/* Navbar Inner Styling */
+.navbar {
+  position: fixed;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px; /* Adjust max-width to match your design */
+  margin: 0 auto; /* Center the navbar */
+  padding: 0 16px; /* Add some padding on sides */
+}
+
+/* Adjust hero container to match navbar alignment */
 .container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  align-items: center; /* Align items to the start (left) */
+  max-width: 1200px; /* Match navbar width */
+  margin: 0 auto; /* Center the container */
+  padding: 0 16px; /* Add some padding on sides */
 }
 
 .main {
@@ -114,24 +127,29 @@
 
 /* Parágrafo de descrição */
 .description {
+  text-align: left !important;
+  max-width: 100%; /* Ensure it spans full width of the container */
+  padding: 0; /* Remove any internal padding */
   margin-top: 16px;
-  font-size: 1rem;
-  font-weight: 500;
-  border-radius: 16px;
-  backdrop-filter: blur(5px);
+  font-size: 1.05rem;
   color: rgba(108, 108, 119, 0.849);
-  text-align: center !important;
-  padding: 8px; 
+  margin-bottom: 16px;
 }
 
+
+
+/* Responsive Adjustments */
 @media (max-width: 768px) {
+  .navbar__inner,
+  .container {
+    padding: 0 12px; /* Slightly reduced padding for mobile */
+  }
+
   .description {
     text-align: center !important;
-    max-width: 90% !important; 
-    margin-top: 10px; 
+    
   }
 }
-
 
 [data-theme="dark"] .description {
   color: rgba(158, 158, 163, 0.849);
@@ -140,7 +158,7 @@
 @media (min-width: 1024px) {
   .description {
     text-align: center !important;
-    max-width: 90% !important; 
+    max-width: 70% !important; 
     margin-top: 10px; 
   }
 }

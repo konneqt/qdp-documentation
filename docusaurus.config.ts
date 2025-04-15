@@ -6,7 +6,6 @@ import { APIOptions } from 'docusaurus-plugin-openapi-docs/src/types';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Quantum API Dev Portal',
-  tagline: 'A Powerful Chaos Engineering Platform for Kubernetes',
   favicon: '/img/favicon.ico',
   url: 'https://konneqt.github.io',
 
